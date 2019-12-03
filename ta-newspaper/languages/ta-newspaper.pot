@@ -1,0 +1,686 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TA Newspaper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-24 10:40+0000\n"
+"PO-Revision-Date: 2019-05-24 10:40+0000\n"
+"Last-Translator: Admin <example@noemail.com>\n"
+"Language-Team: English (United States)\n"
+"Language: en-US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.2; wp-5.0.4"
+
+#: inc/ta-newspaper-function.php:229
+msgid " comment"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:52
+msgid ", "
+msgstr ""
+
+#: inc/ta-newspaper-function.php:183
+msgid "--Choose--"
+msgstr ""
+
+#: inc/widget/widgets-field.php:11
+msgid "--choose--"
+msgstr ""
+
+#: 404.php:17
+msgid "404 ERROR Oops!"
+msgstr ""
+
+#: functions.php:123 functions.php:132 functions.php:141 functions.php:150 
+#: functions.php:159 functions.php:168 functions.php:177
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/ta-newspaper-function.php:55
+msgid "Archive By Category"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:606
+msgid "Archive Page"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:737
+msgid "Archive Sidebar Layout"
+msgstr ""
+
+#: functions.php:241 single.php:37 single.php:37 
+#: inc/ta-newspaper-function.php:118 inc/ta-newspaper-function.php:118 
+#: inc/widget/ta-newspaper-author.php:41 inc/widget/ta-newspaper-author.php:70 
+#: inc/widget/ta-newspaper-author.php:70
+msgid "Author Image"
+msgstr ""
+
+#: inc/widget/ta-newspaper-author.php:31
+msgid "Author Name"
+msgstr ""
+
+#: inc/widget/ta-newspaper-author.php:36
+msgid "Author Words"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:78
+msgid "Banner Settings"
+msgstr ""
+
+#: inc/widget/ta-newspaper-highlight-news.php:41 
+#: inc/widget/ta-newspaper-sidebar-recent-post.php:41 
+#: inc/widget/ta-newspaper-simple-blog-list.php:41
+msgid "Blog Category"
+msgstr ""
+
+#: inc/widget/ta-newspaper-highlight-news.php:53 
+#: inc/widget/ta-newspaper-post-slide.php:53 
+#: inc/widget/ta-newspaper-simple-blog-list.php:53
+msgid "Blog Posts Number"
+msgstr ""
+
+#: inc/ta-newspaper-metabox.php:53
+msgid "Both sidebar"
+msgstr ""
+
+#: inc/ta-newspaper-metabox.php:68
+msgid "Choose Sidebar Template"
+msgstr ""
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: comment count number, 2: title.
+#: comments.php:40
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/customizer/customizer-options.php:101 
+#: inc/customizer/customizer-options.php:179 
+#: inc/customizer/customizer-options.php:203 
+#: inc/customizer/customizer-options.php:374 
+#: inc/customizer/customizer-options.php:427 
+#: inc/customizer/customizer-options.php:459 
+#: inc/customizer/customizer-options.php:483 
+#: inc/customizer/customizer-options.php:507 
+#: inc/customizer/customizer-options.php:531 
+#: inc/customizer/customizer-options.php:555 
+#: inc/customizer/customizer-options.php:579 
+#: inc/customizer/customizer-options.php:627 
+#: inc/customizer/customizer-options.php:651 
+#: inc/customizer/customizer-options.php:675 
+#: inc/customizer/customizer-options.php:699 
+#: inc/customizer/customizer-options.php:775 
+#: inc/customizer/customizer-options.php:799 
+#: inc/customizer/customizer-options.php:823 
+#: inc/customizer/customizer-options.php:903
+msgid "Disable"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:89 template-parts/content-page.php:41
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:100 
+#: inc/customizer/customizer-options.php:178 
+#: inc/customizer/customizer-options.php:202 
+#: inc/customizer/customizer-options.php:373 
+#: inc/customizer/customizer-options.php:426 
+#: inc/customizer/customizer-options.php:458 
+#: inc/customizer/customizer-options.php:482 
+#: inc/customizer/customizer-options.php:506 
+#: inc/customizer/customizer-options.php:530 
+#: inc/customizer/customizer-options.php:554 
+#: inc/customizer/customizer-options.php:578 
+#: inc/customizer/customizer-options.php:626 
+#: inc/customizer/customizer-options.php:650 
+#: inc/customizer/customizer-options.php:674 
+#: inc/customizer/customizer-options.php:698 
+#: inc/customizer/customizer-options.php:774 
+#: inc/customizer/customizer-options.php:798 
+#: inc/customizer/customizer-options.php:822 
+#: inc/customizer/customizer-options.php:902
+msgid "Enable"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:478 
+#: inc/customizer/customizer-options.php:646
+msgid "Enable / Disable Author Name"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:550
+msgid "Enable / Disable Author Section"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:96
+msgid "Enable / Disable Banner"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:423
+msgid "Enable / Disable Boxed Layout"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:770
+msgid "Enable / Disable Combined Script"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:794 
+#: inc/customizer/customizer-options.php:818
+msgid "Enable / Disable Combined Style"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:526 
+#: inc/customizer/customizer-options.php:694
+msgid "Enable / Disable Comment Count"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:455 
+#: inc/customizer/customizer-options.php:623
+msgid "Enable / Disable Feature Image"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:370
+msgid "Enable / Disable Footer Go Up Button"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:502 
+#: inc/customizer/customizer-options.php:670
+msgid "Enable / Disable Post Date"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:574
+msgid "Enable / Disable Related Posts Section"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:199
+msgid "Enable / Disable Social Link"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:175
+msgid "Enable / Disable Top Header"
+msgstr ""
+
+#: inc/ta-newspaper-function.php:131
+msgid "Error 404"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:230
+msgid "Facebook Link"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:351
+msgid "Footer Copyright Text"
+msgstr ""
+
+#: functions.php:157
+msgid "Footer One"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:334
+msgid "Footer Setting"
+msgstr ""
+
+#: functions.php:175
+msgid "Footer Three"
+msgstr ""
+
+#: functions.php:166
+msgid "Footer Two"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:59
+msgid "Front Page Settings"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:48
+msgid "General Settings"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:280
+msgid "Google Link"
+msgstr ""
+
+#: header.php:101
+msgid "Header Image"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:23
+msgid "Header Image Link"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:37
+msgid "Header Settings"
+msgstr ""
+
+#: inc/ta-newspaper-function.php:44 inc/ta-newspaper-function.php:47
+msgid "Home"
+msgstr ""
+
+#: functions.php:148
+msgid "Home Full Width"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:97
+msgid "Home Page Header Banner"
+msgstr ""
+
+#: functions.php:139
+msgid "Home With Right Sidebar"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://themesarray.com/"
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: inc/customizer/customizer-options.php:914
+msgid "Layout 1"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:915
+msgid "Layout 2"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:916
+msgid "Layout 3"
+msgstr ""
+
+#: inc/widget/ta-newspaper-highlight-news.php:29 
+#: inc/widget/ta-newspaper-post-slide.php:29 
+#: inc/widget/ta-newspaper-sidebar-recent-post.php:29 
+#: inc/widget/ta-newspaper-simple-blog-list.php:29
+msgid "Layout One"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:70
+msgid "Layout Settings"
+msgstr ""
+
+#: inc/widget/ta-newspaper-highlight-news.php:31 
+#: inc/widget/ta-newspaper-post-slide.php:31 
+#: inc/widget/ta-newspaper-sidebar-recent-post.php:31 
+#: inc/widget/ta-newspaper-simple-blog-list.php:31
+msgid "Layout Three"
+msgstr ""
+
+#: inc/widget/ta-newspaper-highlight-news.php:30 
+#: inc/widget/ta-newspaper-post-slide.php:30 
+#: inc/widget/ta-newspaper-sidebar-recent-post.php:30 
+#: inc/widget/ta-newspaper-simple-blog-list.php:30
+msgid "Layout Two"
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:72
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: functions.php:130
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/ta-newspaper-metabox.php:35
+msgid "Left sidebar"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:297
+msgid "LinkedIn Link"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:59
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: inc/widget/widgets-field.php:147
+msgid "No file chosen"
+msgstr ""
+
+#: inc/ta-newspaper-metabox.php:47
+msgid "No sidebar"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. 1: title.
+#: comments.php:34
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:771
+msgid "Option will combile all scripts files on one file."
+msgstr ""
+
+#: inc/customizer/customizer-options.php:795 
+#: inc/customizer/customizer-options.php:819
+msgid "Option will combile all styles files on one file."
+msgstr ""
+
+#: inc/ta-newspaper-function.php:137
+msgid "Page"
+msgstr ""
+
+#: template-parts/content-page.php:28 template-parts/content.php:84
+msgid "Pages:"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:314
+msgid "Pinterest Link"
+msgstr ""
+
+#. %s: post author.
+#: inc/template-tags.php:35
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. %s: post date.
+#: inc/template-tags.php:29
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/ta-newspaper-metabox.php:14
+msgid "Post Options"
+msgstr ""
+
+#: inc/widget/ta-newspaper-post-slide.php:41
+msgid "Post Slide Category"
+msgstr ""
+
+#: inc/widget/ta-newspaper-highlight-news.php:47 
+#: inc/widget/ta-newspaper-post-slide.php:47 
+#: inc/widget/ta-newspaper-sidebar-recent-post.php:47 
+#: inc/widget/ta-newspaper-simple-blog-list.php:47
+msgid "Post Slide Layout"
+msgstr ""
+
+#. 1: list of categories.
+#: inc/template-tags.php:55
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/widget/ta-newspaper-category-blog.php:37
+msgid "Posts Per Section"
+msgstr ""
+
+#: inc/ta-newspaper-function.php:111
+msgid "Posts tagged"
+msgstr ""
+
+#: functions.php:61
+msgid "Primary Menu"
+msgstr ""
+
+#: template-parts/content.php:78 inc/customizer/customizer-options.php:709 
+#: inc/widget/ta-newspaper-category-blog.php:138 
+#: inc/widget/ta-newspaper-highlight-news.php:132 
+#: inc/widget/ta-newspaper-highlight-news.php:222 
+#: inc/widget/ta-newspaper-post-slide.php:198 
+#: inc/widget/ta-newspaper-post-slide.php:242 
+#: inc/widget/ta-newspaper-simple-blog-list.php:129 
+#: inc/widget/ta-newspaper-simple-blog-list.php:205
+msgid "Read More"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:716
+msgid "Read More Button Label"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/widget/ta-newspaper-sidebar-recent-post.php:53
+msgid "Recent Blog Posts Number"
+msgstr ""
+
+#: inc/ta-newspaper-function.php:296 inc/customizer/customizer-options.php:588
+msgid "Related Posts"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:595
+msgid "Related Posts Section Title"
+msgstr ""
+
+#: functions.php:240 inc/widget/widgets-field.php:159
+msgid "Remove"
+msgstr ""
+
+#: functions.php:121
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/ta-newspaper-metabox.php:41
+msgid "Right sidebar"
+msgstr ""
+
+#: inc/ta-newspaper-function.php:57
+msgid "Search results for"
+msgstr ""
+
+#. %s: search query.
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/widget/ta-newspaper-category-blog.php:31 
+#: inc/widget/ta-newspaper-post-category.php:31
+msgid "Select Category"
+msgstr ""
+
+#: inc/ta-newspaper-function.php:209
+msgid "Select post"
+msgstr ""
+
+#: inc/ta-newspaper-metabox.php:22
+msgid "Sidebar"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:438
+msgid "Single Post"
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:118
+msgid "Slider Category"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:140
+msgid "Slider Layout"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:214
+msgid "Social Link"
+msgstr ""
+
+#: template-parts/content-none.php:38
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/customizer/customizer-options.php:753
+msgid "Speed Boost"
+msgstr ""
+
+#. Name of the theme
+msgid "TA Newspaper"
+msgstr ""
+
+#: inc/widget/ta-newspaper-author.php:16
+msgid "TA Newspaper : Author Box"
+msgstr ""
+
+#: inc/widget/ta-newspaper-simple-blog-list.php:16
+msgid "TA Newspaper : Home Blog List"
+msgstr ""
+
+#: inc/widget/ta-newspaper-category-blog.php:16
+msgid "TA Newspaper : Home Category Blog"
+msgstr ""
+
+#: inc/widget/ta-newspaper-highlight-news.php:16
+msgid "TA Newspaper : Home Highlight Posts"
+msgstr ""
+
+#: inc/widget/ta-newspaper-post-slide.php:16
+msgid "TA Newspaper : Home Post Slide"
+msgstr ""
+
+#: inc/widget/ta-newspaper-post-category.php:16
+msgid "TA Newspaper : Post Category"
+msgstr ""
+
+#: inc/widget/ta-newspaper-sidebar-recent-post.php:16
+msgid "TA Newspaper : Sidebar Recent Blog"
+msgstr ""
+
+#: footer.php:41
+#, php-format
+msgid "TA Newspaper By %1$s."
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"TA Newspaper is a beautiful creative free responsive blog and magazine "
+"WordPress theme. It is fully responsive and works perfectly on all type of "
+"devices like mobiles, tablets, laptops, and all kinds of browser.  TA "
+"Newspaper is very easy to use and customize the theme. This theme is made "
+"for any search engine, SEO Compatible.  TA Newspaper is lightweight and can "
+"be used to run a blog, magazine, travel journals, personal blogs and other. "
+"The theme is SEO Friendly and Schema.org markup ready so search engines will "
+"love it. We have inserted lots of advertisement areas where you can use for "
+"your Google Adsense or other types of ads."
+msgstr ""
+
+#. 1: list of tags.
+#: inc/template-tags.php:62
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:397
+msgid "Theme Color"
+msgstr ""
+
+#. Author of the theme
+#: footer.php:41
+msgid "Themesarray"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:647 
+#: inc/customizer/customizer-options.php:671 
+#: inc/customizer/customizer-options.php:695
+msgid "This option works only for archive post type."
+msgstr ""
+
+#: inc/customizer/customizer-options.php:479 
+#: inc/customizer/customizer-options.php:503 
+#: inc/customizer/customizer-options.php:527 
+#: inc/customizer/customizer-options.php:551 
+#: inc/customizer/customizer-options.php:575 
+#: inc/customizer/customizer-options.php:596
+msgid "This option works only for single post type."
+msgstr ""
+
+#: inc/widget/ta-newspaper-author.php:17
+msgid "This Widget show Author Profile"
+msgstr ""
+
+#: inc/widget/ta-newspaper-highlight-news.php:17 
+#: inc/widget/ta-newspaper-simple-blog-list.php:17
+msgid "This Widget show Blogs"
+msgstr ""
+
+#: inc/widget/ta-newspaper-category-blog.php:17
+msgid "This Widget show Category Blogs"
+msgstr ""
+
+#: inc/widget/ta-newspaper-post-category.php:17
+msgid "This Widget show Post Category Profile"
+msgstr ""
+
+#: inc/widget/ta-newspaper-sidebar-recent-post.php:17
+msgid "This Widget show Recent Blogs"
+msgstr ""
+
+#: inc/widget/ta-newspaper-post-slide.php:17
+msgid "This Widget show Single Post Slide"
+msgstr ""
+
+#: inc/widget/ta-newspaper-highlight-news.php:36 
+#: inc/widget/ta-newspaper-post-slide.php:36 
+#: inc/widget/ta-newspaper-sidebar-recent-post.php:36 
+#: inc/widget/ta-newspaper-simple-blog-list.php:36
+msgid "Title"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:155
+msgid "Top Header"
+msgstr ""
+
+#: functions.php:64
+msgid "Top Menu"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:246
+msgid "Twitter Link"
+msgstr ""
+
+#: inc/widget/widgets-field.php:153
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: inc/widget/widgets-field.php:150
+msgid "Upload"
+msgstr ""
+
+#: inc/widget/widgets-field.php:176
+msgid "View File"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:406
+msgid "Web Layout"
+msgstr ""
+
+#: inc/customizer/customizer-options.php:263
+msgid "Youtube Link"
+msgstr ""

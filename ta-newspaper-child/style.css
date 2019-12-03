@@ -1,0 +1,13 @@
+/*
+Theme Name: TA newspaper Child
+Template: ta-newspaper
+Theme URI: http://example.com/
+Description: Ta-newspaper child theme
+Author: Kama
+Author URI: http://example.com/about/
+Version: 1.0
+*/
+/* 
+style */
+@import url("../ta-newspaper/style.css");
+
