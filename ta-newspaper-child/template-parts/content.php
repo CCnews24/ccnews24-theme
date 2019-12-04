@@ -12,6 +12,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="https://schema.org/Blog">
 	<header class="entry-header">
 		<?php
+		if ( is_single() ) :
+			the_title( '<h2 class="entry-title post-single_title">', '</h2>' );
+		else :
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		endif;
 		
 		if( is_archive() ){
 			$ta_newspaper_ed_feature_image = get_theme_mod('ta_newspaper_ed_archive_feature_image','enable');
@@ -24,13 +29,9 @@
             ?><img class="post-page-image" src="<?php echo esc_url($ta_newspaper_post_image[0]) ?>" alt="<?php the_title_attribute()?>" title="<?php the_title_attribute()?>" /><?php
         }
 
-        ta_newspaper_post_category();
+       
         
-		if ( is_single() ) :
-			the_title( '<h2 class="entry-title">', '</h2>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+		
 
 		if ( 'post' === get_post_type() ) :
 			if( is_archive() ){
@@ -72,7 +73,7 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content vv">
+	<div class="entry-content one-post-content">
 		<?php
         if ( is_single() ) :
 			the_content();
@@ -87,6 +88,8 @@
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ta-newspaper' ),
 				'after'  => '</div>',
 			) );
+
+			ta_newspaper_post_category();
 		?>
 	</div><!-- .entry-content -->
 

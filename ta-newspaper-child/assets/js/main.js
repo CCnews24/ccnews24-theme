@@ -7,6 +7,26 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         prevArrow: $('.headline-articles__navigation--prev'),
        nextArrow: $('.headline-articles__navigation--next'),
+       responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
     });
   });
 

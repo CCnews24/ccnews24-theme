@@ -93,7 +93,7 @@ get_header(); ?>
 		<main id="main" class="site-main">
 <!-- posts -->
 
-<?php $blog_query = new WP_Query( array ( 'post_type' => 'post',  ) ); ?>
+<?php $blog_query = new WP_Query( array ( 'post_type' => 'post', 'order' => 'ASC', ) ); ?>
 
 <?php while ( $blog_query->have_posts() ) : $blog_query->the_post(); ?>
 
@@ -105,10 +105,10 @@ get_header(); ?>
 			</div>
         <?php } ?>
         <div class="post-box_text">
-                                        <p class="post-box_cat d-flex">
-                                            <a href="https://ccnews24.net/hot-news"> HOT NEWS</a> 
-                                            <span class="has-dropdown share-dropdown" data-target="share-dropdown--315" data-align="right-bottom"><i class="material-icons"></i></span>
-                                        </p>
+                                        <div class="post-box_cat d-flex">
+                                           <?php the_category(); ?>
+                                            <span class="has-dropdown post-has-dropdown share-dropdown" data-target="share-dropdown--315" data-align="right-bottom"><i class="material-icons"></i></span>
+                                        </div>
                                         
                                         <h2 class="post-box_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                         

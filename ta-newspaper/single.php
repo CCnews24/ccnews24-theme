@@ -17,7 +17,7 @@ get_header(); ?>
         get_sidebar( 'left' );
     } ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area one-post">
 		<main id="main" class="site-main">
 
 		<?php

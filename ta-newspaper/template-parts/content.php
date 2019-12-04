@@ -72,7 +72,7 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content vv">
+	<div class="entry-content dd">
 		<?php
         if ( is_single() ) :
 			the_content();
