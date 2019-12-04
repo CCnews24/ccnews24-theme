@@ -34,10 +34,15 @@
                 <div class="col-12">
                     <div class="header__searchbar">
                         <div class="header__searchbar__container">
-                            <form action="https://ccnews24.net/search" method="get" class="d-flex">
-                                <input class="header__searchbar__container__input" id="search" type="search" required="" name="q" placeholder="Search…" autocomplete="off">
+                        
+                            <form role="search" action="http://localhost/ccnews/www/" method="get" class="d-flex">
+                               
+                                <input class="header__searchbar__container__input" id="search" type="search" required="" name="s" autofocus placeholder="Search…" autocomplete="off">
+                                <input type="submit" class="search-submit" value="Search">
                                 <label class="header__searchbar__container__close material-button material-button--icon ripple has-ripple" for="search">
-                                    <i class="material-icons"></i>
+                                   
+                                <i class="material-icons"></i>
+                                   
                                 </label>
                             </form>
                         </div>
@@ -104,8 +109,8 @@
                                                 </ul>
                                             </div>
                                             <div class="category-dropdown_sec sec_cat3 clearfix">
-                                                <img class="footer-site-logo" src="/assets/img/logo.png" width="60px" alt="">
-                                                <div class="language-links hor">
+                                             <div class="logo-dropdown"><?php the_custom_logo( $blog_id ); ?></div>
+                                            <div class="language-links hor">
                                                     <a class="button button-white" href="javascript:">
                                                         <i class="material-icons"></i> <b>English</b>
                                                     </a>
@@ -143,6 +148,7 @@
                                             <div class="footer-copyright clearfix">
                                                 Copyright © 2019 CCnews24. All rights reserved.
                                             </div>
+                                            
                                         </div>
                                         </div>
                                         

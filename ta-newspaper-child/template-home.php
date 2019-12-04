@@ -93,24 +93,42 @@ get_header(); ?>
 		<main id="main" class="site-main">
 <!-- posts -->
 
-<?php $blog_query = new WP_Query( array ( 'post_type' => 'post', 'posts_per_page' => '5', ) ); ?>
+<?php $blog_query = new WP_Query( array ( 'post_type' => 'post',  ) ); ?>
 
 <?php while ( $blog_query->have_posts() ) : $blog_query->the_post(); ?>
 
-	<div class="blog-post">
-		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+	<div class="blog-post post-box d-flex">
+		
 		<?php if ( has_post_thumbnail() ) {  ?>
-			<div class="blog-featured-image">
-				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'blog-featured-image' ); ?></a>
+			<div class="blog-featured-image post-box_img">
+				<a class="post-box_img" href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'blog-featured-image' ); ?></a>
 			</div>
-		<?php } ?>
-		<span class='date-meta'><i class='fa fa-calendar'></i> <?php echo get_the_date(); ?> ></span>
-		<span class="dashicons dashicons-admin-users"><i class='fa fa-user'></i><?php the_author() ?> ></span>
-		<div class="post-excerpt">
+        <?php } ?>
+        <div class="post-box_text">
+                                        <p class="post-box_cat d-flex">
+                                            <a href="https://ccnews24.net/hot-news"> HOT NEWS</a> 
+                                            <span class="has-dropdown share-dropdown" data-target="share-dropdown--315" data-align="right-bottom"><i class="material-icons"></i></span>
+                                        </p>
+                                        
+                                        <h2 class="post-box_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                        
+                                        <hr class="post-hr">
+                                        <div class="post-box_date d-flex">
+                                        
+                                         <?php the_time('j M , H:i'); ?> 
+                                                <a class="author-link" href="#" title="<?php the_author() ?>">
+                                                <span class="dashicons dashicons-admin-users">@ <?php the_author() ?> </span></a>
+                                        </div>
+                                    </div>
+		
+		
+		<!-- <div class="post-excerpt">
 			<?php the_excerpt(); ?>
 			<span class='read-more'><a class="read-more"  href="<?php the_permalink(); ?>"> More... </a></span>
-		</div>
-	</div><!-- end .blog-post -->
+		</div> -->
+    </div><!-- end .blog-post -->
+    
+    
 
 <?php endwhile; ?>
 
