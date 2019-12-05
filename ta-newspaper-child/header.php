@@ -29,7 +29,7 @@
             
 
 
-<div class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="header__searchbar">
@@ -53,15 +53,22 @@
         <div class="header__appbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-md-9 col-8">
                         <div class="header__appbar--left d-flex">
-                      
+                        <div id="top-toggle" class="top-toggle">
+            	            <span class="one"> </span>
+            	            <span class="two"> </span>
+            	            <span class="three"> </span>
+            	        </div>
+
                             <div class="header__appbar--left__logo">
                                 <?php the_custom_logo( $blog_id ); ?>
                                 
                             </div>
                             <div class="header__appbar--left__menu">
                             <div class="menu-main-wrap">
+
+                           
             			<?php
             				wp_nav_menu( array(
             					'theme_location' => 'ta-newspaper-primary-menu',
@@ -95,6 +102,8 @@
                                                     <a href="/reactions/attention" title="Attention"><img alt="Attention" src="<?php bloginfo('template_url'); ?>/images/img/attention.png " width="42"></a>
                                                 </div>
                                             </div>
+
+                                            
                                             <div class="category-dropdown_sec sec_cat2 clearfix">
                                                 <ul class="d-flex sec_cat2-list">
                                                     <li class="dropdown-container__item ripple has-ripple" style="float:left;width:25%">
@@ -157,15 +166,64 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                     <!-- mob -->
+                     <div class="drawer">
+                        <div class="drawer__header">
+                            <div class="drawer__header__logo">  <?php the_custom_logo( $blog_id ); ?></div>
+
+
+                            <span class="drawer__header__close"><i class="material-icons"></i></span>
+                        </div>
+                                
+                            <?php
+                                wp_nav_menu( array(
+                                    'theme_location' => '',
+                                    'menu'        => 'mobile-menu',
+                                ) );
+                            ?>
+                        <div class="reaction-emojis">
+                                                    <a href="/reactions/bullish" title="Bullish"><img alt="Bullish" src="<?php bloginfo('template_url'); ?>/images/img/bullish" width="42"></a>
+                                                    <a href="/reactions/bearish" title="Bearish"><img alt="Bearish" src="<?php bloginfo('template_url'); ?>/images/img/bearish.png " width="42"></a>
+                                                    <a href="/reactions/like" title="Like"><img alt="Like" src="<?php bloginfo('template_url'); ?>/images/img/5a7b45263bf58-thumbup.png " width="42"></a>
+                                                    <a href="/reactions/dislike" title="Dislike"><img alt="Dislike" src="<?php bloginfo('template_url'); ?>/images/img/thumbdown.png " width="42"></a>
+                                                    <a href="/reactions/lol" title="LOL"><img alt="LOL" src="<?php bloginfo('template_url'); ?>/images/img/lol.png " width="42"></a>
+                                                    <a href="/reactions/hooray" title="Hooray"><img alt="Hooray" src="<?php bloginfo('template_url'); ?>/images/img/horn.png " width="42"></a>
+                                                    <a href="/reactions/attention" title="Attention"><img alt="Attention" src="<?php bloginfo('template_url'); ?>/images/img/attention.png " width="42"></a>
+                                                </div>
+                        <div class="footer-left " style="width:100%;padding:10px">
+                        <div class="footer-menu clearfix">
+                                            <a class="footer-menu__item " style="color:#888" href="https://ccnews24.net/pages/editorial-board" title="Editorial board">Editorial board</a>
+                                                        <a class="footer-menu__item" style="color:#888" href="https://ccnews24.net/contact">Contact</a>
+                                    </div>
+                        <div class="footer-copyright clearfix" style="color:#aaa">
+                            Copyright © 2019 CCnews24. All rights reserved.
+
+                    </div>
+                </div>
+
+            </div>
+                    <!-- end mob -->
+                    <div class="col-md-3 col-4">
+                    
                         <div class="header__appbar--right">
                             <div class="header__appbar--right__search">
                                 <div class="header__appbar--right__search__button material-button material-button--icon ripple has-ripple">
                                     <i class="material-icons"></i>
                                 </div>
                             </div>
-                            <a href="#" class="header__appbar--right_create header__appbar--right_btn">Create</a>
-                            <a href="#" class="header__appbar--right_entry header__appbar--right_btn">Entry</a>
+                            <?php
+	if ( is_user_logged_in() ) {
+	  global $rcl_user_URL;
+	  echo '<a class="header__appbar--right_entry header__appbar--right_btn" href="'. $rcl_user_URL . '"><i class="fa fa-user"></i><span></span></a><br />';
+	  echo '<a class="header__appbar--right_entry header__appbar--right_btn" href="' . wp_logout_url( home_url() ) . '">Exit</a>';
+	} else {
+	  echo '<a href="#" class="header__appbar--right_entry header__appbar--right_btn rcl-login" >Entry</a><br />';
+	  echo '<a href="#" class="header__appbar--right_create header__appbar--right_btn rcl-login" >Create</a>';
+	}
+?>
+                            <!-- <a href="#" class="header__appbar--right_create header__appbar--right_btn">Create</a>
+                            <a href="#" class="header__appbar--right_entry header__appbar--right_btn">Entry</a> -->
+                            <a href="#" class="rcl-login login-mob"><i class="material-icons"></i></a>
                         </div>
                     </div>
                 </div>

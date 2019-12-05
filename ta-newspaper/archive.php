@@ -14,7 +14,7 @@ $sidebar_meta_option = get_theme_mod('ta_newspaper_archive_layout','right_sideba
 		 get_sidebar( 'left' );
 	} ?>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main ff">
 
 		<?php
 		if ( have_posts() ) : ?>

@@ -209,6 +209,14 @@ body {
 .header__appbar .container {
     justify-content: space-between;
 }
+div#top-toggle {
+    padding: 21px 8px 0;
+}
+div#top-toggle span {
+    background: #050505;
+    width: 22px;
+    height: 3px;
+}
 .header__searchbar {
     transition: all .3s;
     color: #252525;
@@ -698,7 +706,7 @@ button.button-white {
     list-style: none;
     float: left;
     padding: 0;
-    margin:0 0 -8px ;
+    margin:0;
 }
 .post-has-dropdown {
     float: right;
@@ -925,9 +933,66 @@ header .post-single_title {
 .post-box .post-box_text ul li:not(:nth-child(2)){
    display: none;
    }
+
    
+.drawer {
+    display: none;
+}
+.drawer__header {
+    display: flex;
+}
+.drawer-active {
+    left: 0!important;
+}
+.body-unscroll {
+    overflow-y:hidden;
+}
+.login-mob {
+    display: none;
+}
+#recallbar {
+    display: none;
+}
+#page {
+    margin-top: -37px;
+}
+.trail-items li:not(:last-child) {
+    display: none;
+}
+.trail-items li span {
+    font-size: 1.5em;
+}
+.category .header-banner-container {
+    padding: 0;
+    margin: 0;
+}
 @media (min-width: 1200px){
     .container {
         max-width: 1120px;
     }
+    #slider span.ccpw_icon {
+        width: 85px;
+    }
+    #slider .bx-viewport {
+        height: 95.6px!important;
+    }
+    .tickercontainer .coin-container {
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #slider .tickercontainer ul {
+        overflow: visible;
+    }
+    #slider .tickercontainer span.price {
+        font-size: 17px;
+        margin-left: 8px;
+        float: left;
+        display: flex;
+        line-height: 0em;
+        margin-left: 100px;
+    }
+}
+@media (max-width: 823px){
+   
 }
