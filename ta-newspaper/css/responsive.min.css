@@ -25,8 +25,48 @@
         top: 100%;
         z-index: 999
     }
+    #back-top {
+        margin-left: 0;
+        left: 72%;
+    }
+    .footer-copyright {
+        text-align: left;
+    }
+    .single .one-post .author-link {display: none;}
+    .single .one-post .entry-meta{
+        display: none;
+    }
+    #back-top {
+        display: none!important;
+    }
+    .post-box {
+        height: auto;
+    }
+    .dw-reactions-box {
+        position: static; 
+        border: none;
+        border-radius: 40px;
+        box-shadow:none;
+        width: auto;
+        height: 60px;
+        display: block;
+    }
+    .dw-reactions-box .dw-reaction {
+        opacity: 1;
+        top: 68px;
+    }
+    .dw-reactions-main-button {
+        line-height: 70px;
+    }
+  
+    .reaction-emojis {
+        float: none;
+    }
     .header__appbar--left__menu__list {
         display: none;
+    }
+    .header__appbar--right__search {
+        width: 25%;
     }
     .login-mob {
         display: block;
@@ -39,8 +79,24 @@
     .login-mob i {
         font-size: 22px;
     }
-    .header__appbar--right_btn {
+    .header-logout {
         display: none;
+    }
+    .personal {
+        padding: 4px 10px;
+        border-radius: 50%;
+    }
+    .header-logout-mob {
+        display: block;
+    }
+    .header__appbar--right_btn {
+        
+    }
+    .login-desc {
+        display: none;
+    }
+    .header__appbar--right {
+        padding: 10px 0;
     }
     .slick-dots {
         list-style: none;
@@ -121,7 +177,8 @@
     #menu-mobile-menu li:hover {
      background-color: #eee;
     }
-    #menu-mobile-menu .current-menu-item .material-icons {
+    #menu-mobile-menu .current-menu-item .material-icons,
+    #menu-mobile-menu .current-menu-item .fa {
         color: #f44336;
     }
     .top-main-navigation ul li a {
@@ -324,10 +381,44 @@
         flex-direction: column;
     }
     .post-box_text {
-
+        position: relative;
+    }
+    .post-box_cat {
+        position: static;
+    }
+    .category .cat-title,
+    .post-box_title {
+        height: auto;
+    }
+    .post-has-dropdown {
+        position: absolute;
+        bottom: 7px;
+        right: 24%;
+        top: auto;
+    }
+    .share-dropdown-soc {
+      
+        top: auto;
+        right: 28%;
+        bottom: -112%;
+    }
+    .category-article .category-article_text .share-dropdown-soc {
+        bottom: -40%;
+    }
+    .post-has-dropdown .fa-ellipsis-v:before {
+        content: "\f064";
+    }
+    .post-hr {
+        margin-bottom: 5px;
+    }
+    .category .category-article {
+        display: block;
+    }
+    .category-article_text {
+        width: auto;
     }
     .post-box_text .post-box_cat {
-        display: none!important;
+       
     }
     .post-box_img,
     .post-box_text {
@@ -412,18 +503,47 @@
         margin-right: 0
     }
 }
-
+@media screen and (max-width:680px) {
+    .mcwp-crypto .cc-coin img, .mcwp-crypto .mcwp-card-head img {
+        left: 0;
+    }
+    .mcwp-crypto span:not([class*="mcwp"]) {
+        float: left;
+        width: 100%;
+    }
+    .mcwp-crypto span.mcwpdown {
+        top:40px;
+    }
+}
 @media screen and (max-width:600px) {
     .tan-home-full-width .widget_ta_newspaper_blog_category_widget .main-multiple-cat-wrap {
         width: 100%;
         margin: 0;
         margin-bottom: 50px
     }
- 
+    header .post-single_title, .single .post-single_title a {
+        font-size: 1.5em;
+    }
+    #page {
+        overflow: hidden;
+    }
+    header .post-single_title,
+    .single .post-single_title a,
+    .one-post-content .post-single_title {
+        font-size: 1.5em;
+    }
+    .header-banner-container {
+        padding: 50px 0;
+    }
+    .related-sec-title h2 {
+        font-size: 1.2em;
+    }
     .headline-slider__navigation {
         top: 48px;
     }
-
+    .mcwp-crypto .cc-coin > div {
+        margin-left: 40px;
+    }
     .first-multipal-post-image img {
         margin: 0 auto
     }
@@ -478,11 +598,15 @@
     #top-menu {
         width: 100%
     }
-
+    .mcwp-crypto .cc-coin > div {
+        margin-left: 29px;
+    }
     .tan-home-sidebar .highlited-3-other .highlight-other-post-3 {
         width: 100%
     }
-
+    .mcwp-crypto span.mcwpdown {
+        top:0;
+    }
     .tan-home-sidebar .highlited-3-other .highlight-other-post-3:nth-child(3n+3) {
         margin-right: 0
     }

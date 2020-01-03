@@ -14,7 +14,9 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
-
+    <p id="back-top" style="display: block;">
+		<a href="#top"><span><i class="fa fa-arrow-up"></i></span></a>
+	</p>
         <?php if( is_active_sidebar('ta-newspaper-footer-1') || 
             is_active_sidebar('ta-newspaper-footer-2') || 
             is_active_sidebar('ta-newspaper-footer-3') ){

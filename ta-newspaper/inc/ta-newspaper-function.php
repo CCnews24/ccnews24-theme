@@ -190,7 +190,7 @@ if( ! function_exists( 'ta_newspaper_single_related_post' ) ) :
                 $list_cats[] = $cat->term_id; 
             }
         }  
-        $related_posts_query = new WP_Query( array( 'post_type' => 'post','posts_per_page' => 3,'post__not_in' => array( $post->ID, 'category__in' => $list_cats ) ) );
+        $related_posts_query = new WP_Query( array( 'post_type' => 'post','posts_per_page' => 20,'post__not_in' => array( $post->ID, 'category__in' => $list_cats ) ) );
 
         if( $related_posts_query->have_posts() ): 
             
@@ -211,7 +211,7 @@ if( ! function_exists( 'ta_newspaper_single_related_post' ) ) :
 
                             <div class="loop-related-conents">
                                 <div class="related-img-contents">
-
+                              
                                     <div class="related-image">
                                         <a href="<?php the_permalink(); ?>">
                                             <?php if( $ta_newspaper_related_image[0] ){ ?>
@@ -225,22 +225,31 @@ if( ! function_exists( 'ta_newspaper_single_related_post' ) ) :
                                             <?php } ?>
                                             
                                         </a>
+                                        <?php if( get_the_title() ){
+                                            the_title( '<h2 class="entry-title post-single_title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+                                        } ?>
                                     </div>
 
                                     <div class="related-title-cat-date">
 
-                                        <?php if( get_the_title() ){
-                                            the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-                                        } ?>
-
+                                        
+                                      
                                         <div class="related-entry-meta">
                                             <?php ta_newspaper_entry_meta(); ?>
                                         </div><!-- .entry-meta -->
-
+                                        <?php if( get_the_content() ){
+                                            the_content( );
+                                        } ?>
                                     </div>
                                 </div>
+                                <hr>
+                                <progress value="0">
+   <div class="progress-container">
+    <span class="progress-bar"></span>
+  </div>
+</progress>
                             </div>
-
+                            
                         <?php } wp_reset_postdata(); ?>
                     </div>
                 </div>

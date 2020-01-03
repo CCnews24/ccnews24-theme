@@ -42,7 +42,12 @@ $sidebar_meta_option = get_theme_mod('ta_newspaper_archive_layout','right_sideba
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+	<?php
+if( $sidebar_meta_option == 'right_sidebar' || $sidebar_meta_option == 'both_sidebar' || $sidebar_meta_option == '') {
+        get_sidebar();
+} ?>
 
 </div>
+
+
 <?php get_footer();

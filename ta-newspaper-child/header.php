@@ -18,24 +18,25 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,500,600,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for ccnews24" href="/feed/">
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage" >
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ta-newspaper' ); ?></a>
-	<header id="masthead" class="site-header header" itemscope itemtype="http://schema.org/WPHeader">
+	<header id="masthead" class="site-header header default" itemscope itemtype="http://schema.org/WPHeader">
 
             
 
 
-        <div class="container">
+        <div class="tan-container">
             <div class="row">
                 <div class="col-12">
                     <div class="header__searchbar">
                         <div class="header__searchbar__container">
                         
-                            <form role="search" action="http://localhost/ccnews/www/" method="get" class="d-flex">
+                            <form role="search" action="" method="get" class="d-flex">
                                
                                 <input class="header__searchbar__container__input" id="search" type="search" required="" name="s" autofocus placeholder="Search…" autocomplete="off">
                                 <input type="submit" class="search-submit" value="Search">
@@ -51,9 +52,10 @@
             </div>
         </div>
         <div class="header__appbar">
-            <div class="container">
+            <div class="tan-container">
                 <div class="row">
-                    <div class="col-md-9 col-8">
+             
+                    <div class="col-md-10 col-7">
                         <div class="header__appbar--left d-flex">
                         <div id="top-toggle" class="top-toggle">
             	            <span class="one"> </span>
@@ -76,53 +78,64 @@
             				) );
             			?>
                     </div>
+                    <div class="dropdown-box"></div>
                                 <ul class="header__appbar--left__menu__list">
                                    
                                     <li class="header__appbar--left__menu__list__item">
                                         <a class="category-dropdown-button ripple has-dropdown has-ripple" href="javascript:" data-target="category-dropdown" data-align="center">
                                             <i class="material-icons"></i>
                                         </a>
+                                       <div class="modal-overlay"></div>
                                         <div class="category-dropdown dropdown-container">
-                                            <div class="category-dropdown_sec sec_cat1 clearfix">
-                                                <div class="category-dropdown_community">
-                                                    <div class="community_title">Hey CCnews24 Community!
-                                                    </div>
-                                                    <div class="community_desc">   
-                                                        <a href="/login">Log in</a> or 
-                                                        <a href="/register">sign up</a> to create your own posts.
-                                                    </div>
-                                                </div>
-                                                <div class="reaction-emojis">
-                                                    <a href="/reactions/bullish" title="Bullish"><img alt="Bullish" src="<?php bloginfo('template_url'); ?>/images/img/bullish" width="42"></a>
-                                                    <a href="/reactions/bearish" title="Bearish"><img alt="Bearish" src="<?php bloginfo('template_url'); ?>/images/img/bearish.png " width="42"></a>
-                                                    <a href="/reactions/like" title="Like"><img alt="Like" src="<?php bloginfo('template_url'); ?>/images/img/5a7b45263bf58-thumbup.png " width="42"></a>
-                                                    <a href="/reactions/dislike" title="Dislike"><img alt="Dislike" src="<?php bloginfo('template_url'); ?>/images/img/thumbdown.png " width="42"></a>
-                                                    <a href="/reactions/lol" title="LOL"><img alt="LOL" src="<?php bloginfo('template_url'); ?>/images/img/lol.png " width="42"></a>
-                                                    <a href="/reactions/hooray" title="Hooray"><img alt="Hooray" src="<?php bloginfo('template_url'); ?>/images/img/horn.png " width="42"></a>
-                                                    <a href="/reactions/attention" title="Attention"><img alt="Attention" src="<?php bloginfo('template_url'); ?>/images/img/attention.png " width="42"></a>
-                                                </div>
-                                            </div>
+                                                        <div class="category-dropdown_sec sec_cat1 clearfix">
+                                                            <div class="category-dropdown_community">
+                                                                <div class="community_title">Hey CCnews24 Community!
+                                                                </div>
+                                                                <div class="community_desc">  
+                                                                <?php 
+                                                                        if ( is_user_logged_in() ) {
+                                                                        global $rcl_user_URL;
+                                                                        echo '<a class="rcl-login" href="'. $rcl_user_URL . '"><span>Cabinet</span></a> <span>&nbsp;or&nbsp;</span>';
+                                                                        echo '<a class="header-logout header__appbar" href="' . wp_logout_url( home_url() ) . '">Exit</a>';
+                                                                        echo '<a class="header-logout-mob" href="' . wp_logout_url( home_url() ) . '">Exit</a>';
+                                                                        } else {
+                                                                        echo '<a href="#" class="rcl-login" >Log in</a><span>&nbsp;or&nbsp;</span>';
+                                                                        echo '<a href="#" class="rcl-register">Sign up</a>';
+                                                                        echo '<a href="#" class="rcl-login login-mob"><i class="material-icons"></i></a>';
+                                                                        }
+                                                                    ?>
+                                                                 
+                                                                    to create your own posts.
+                                                                </div>
+                                                            </div>
+                                                            <div class="reaction-emojis">
+                                                                <a href="/account/" title="Bullish"><img alt="Bullish" src="<?php bloginfo('template_url'); ?>/images/icons/bullish" width="42"></a>
+                                                                <a href="/account/" title="Bearish"><img alt="Bearish" src="<?php bloginfo('template_url'); ?>/images/icons/bearish.png " width="42"></a>
+                                                                <a href="/account/" title="Like"><img alt="Like" src="<?php bloginfo('template_url'); ?>/images/icons/5a7b45263bf58-thumbup.png " width="42"></a>
+                                                                <a href="/account/" title="Dislike"><img alt="Dislike" src="<?php bloginfo('template_url'); ?>/images/icons/thumbdown.png " width="42"></a>
+                                                                <a href="/account/" title="LOL"><img alt="LOL" src="<?php bloginfo('template_url'); ?>/images/icons/lol.png " width="42"></a>
+                                                                <a href="/account/" title="Hooray"><img alt="Hooray" src="<?php bloginfo('template_url'); ?>/images/icons/horn.png " width="42"></a>
+                                                                <a href="/account/" title="Attention"><img alt="Attention" src="<?php bloginfo('template_url'); ?>/images/icons/attention.png " width="42"></a>
+                                                            </div>
+                                                        </div>
 
+                                                        
+                                                        <div class="category-dropdown_sec sec_cat2 clearfix">
+                                                        <?php
+                                                    wp_nav_menu( array(
+                                                    'theme_location' => '',
+                                                    'menu'        => 'Add-menu',
+                                                    ) );
+                                                    ?>
                                             
-                                            <div class="category-dropdown_sec sec_cat2 clearfix">
-                                                <ul class="d-flex sec_cat2-list">
-                                                    <li class="dropdown-container__item ripple has-ripple" style="float:left;width:25%">
-                                                        <a href="/ico-passport" title="ICO passport">ICO passport </a>
-                                                    </li>
-                                                    <li class="dropdown-container__item ripple has-ripple" style="float:left;width:25%">
-                                                        <a href="/live-icos" title="Live ICOs">Live ICOs </a>
-                                                    </li>
-                                                    <li class="dropdown-container__item ripple has-ripple" style="float:left;width:25%">
-                                                        <a href="/upcoming-icos" title="Upcoming ICOs">Upcoming ICOs </a>
-                                                    </li>
-                                                </ul>
                                             </div>
                                             <div class="category-dropdown_sec sec_cat3 clearfix">
                                              <div class="logo-dropdown"><?php the_custom_logo( $blog_id ); ?></div>
                                             <div class="language-links hor">
-                                                    <a class="button button-white" href="javascript:">
+                                            <?php echo do_shortcode('[gtranslate]'); ?>
+                                                    <!-- <a class="button button-white" href="javascript:">
                                                         <i class="material-icons"></i> <b>English</b>
-                                                    </a>
+                                                    </a> -->
                                                 <ul class="sub-nav ">
                                                                                                                 <li>
                                                             <a href="https://ccnews24.net/selectlanguge/en" class="sub-item">English</a>
@@ -150,16 +163,20 @@
                                     
                                             <div class="footer-left">
                                                 <div class="footer-menu clearfix">
-                                                    <a class="footer-menu__item " href="https://ccnews24.net/pages/editorial-board" title="Editorial board">Editorial board
+                                                    <a class="footer-menu__item " href="/editorial-board/" title="Editorial board">Editorial board
                                                     </a>
-                                                    <a class="footer-menu__item" href="https://ccnews24.net/contact">Contact</a>
+                                                    <a class="footer-menu__item" href="/contact/">Contact</a>
                                                 </div>
                                             <div class="footer-copyright clearfix">
+
+
                                                 Copyright © 2019 CCnews24. All rights reserved.
                                             </div>
                                             
+                                           </div>
                                         </div>
-                                        </div>
+                                        
+                                       
                                         
                                     </li>
                                 </ul>
@@ -182,19 +199,21 @@
                                 ) );
                             ?>
                         <div class="reaction-emojis">
-                                                    <a href="/reactions/bullish" title="Bullish"><img alt="Bullish" src="<?php bloginfo('template_url'); ?>/images/img/bullish" width="42"></a>
-                                                    <a href="/reactions/bearish" title="Bearish"><img alt="Bearish" src="<?php bloginfo('template_url'); ?>/images/img/bearish.png " width="42"></a>
-                                                    <a href="/reactions/like" title="Like"><img alt="Like" src="<?php bloginfo('template_url'); ?>/images/img/5a7b45263bf58-thumbup.png " width="42"></a>
-                                                    <a href="/reactions/dislike" title="Dislike"><img alt="Dislike" src="<?php bloginfo('template_url'); ?>/images/img/thumbdown.png " width="42"></a>
-                                                    <a href="/reactions/lol" title="LOL"><img alt="LOL" src="<?php bloginfo('template_url'); ?>/images/img/lol.png " width="42"></a>
-                                                    <a href="/reactions/hooray" title="Hooray"><img alt="Hooray" src="<?php bloginfo('template_url'); ?>/images/img/horn.png " width="42"></a>
-                                                    <a href="/reactions/attention" title="Attention"><img alt="Attention" src="<?php bloginfo('template_url'); ?>/images/img/attention.png " width="42"></a>
-                                                </div>
+                                                    <a href="/account/" title="Bullish"><img alt="Bullish" src="<?php bloginfo('template_url'); ?>/images/icons/bullish" width="42"></a>
+                                                    <a href="/account/" title="Bearish"><img alt="Bearish" src="<?php bloginfo('template_url'); ?>/images/icons/bearish.png " width="42"></a>
+                                                    <a href="/account/" title="Like"><img alt="Like" src="<?php bloginfo('template_url'); ?>/images/icons/5a7b45263bf58-thumbup.png " width="42"></a>
+                                                    <a href="/account/" title="Dislike"><img alt="Dislike" src="<?php bloginfo('template_url'); ?>/images/icons/thumbdown.png " width="42"></a>
+                                                    <a href="/account/" title="LOL"><img alt="LOL" src="<?php bloginfo('template_url'); ?>/images/icons/lol.png " width="42"></a>
+                                                    <a href="/account/" title="Hooray"><img alt="Hooray" src="<?php bloginfo('template_url'); ?>/images/icons/horn.png " width="42"></a>
+                                                    <a href="/account/" title="Attention"><img alt="Attention" src="<?php bloginfo('template_url'); ?>/images/icons/attention.png " width="42"></a>
+                        </div> 
                         <div class="footer-left " style="width:100%;padding:10px">
                         <div class="footer-menu clearfix">
-                                            <a class="footer-menu__item " style="color:#888" href="https://ccnews24.net/pages/editorial-board" title="Editorial board">Editorial board</a>
-                                                        <a class="footer-menu__item" style="color:#888" href="https://ccnews24.net/contact">Contact</a>
+                                            <a class="footer-menu__item " style="color:#888" href="editorial-board/" title="Editorial board">Editorial board</a>
+                                                        <a class="footer-menu__item" style="color:#888" href="contact/">Contact</a>
                                     </div>
+                                    <?php echo do_shortcode('[gtranslate]'); ?>
+                                 
                         <div class="footer-copyright clearfix" style="color:#aaa">
                             Copyright © 2019 CCnews24. All rights reserved.
 
@@ -203,8 +222,8 @@
 
             </div>
                     <!-- end mob -->
-                    <div class="col-md-3 col-4">
-                    
+                    <div class="col-md-2 col-5">
+                  
                         <div class="header__appbar--right">
                             <div class="header__appbar--right__search">
                                 <div class="header__appbar--right__search__button material-button material-button--icon ripple has-ripple">
@@ -212,18 +231,18 @@
                                 </div>
                             </div>
                             <?php
-	if ( is_user_logged_in() ) {
-	  global $rcl_user_URL;
-	  echo '<a class="header__appbar--right_entry header__appbar--right_btn" href="'. $rcl_user_URL . '"><i class="fa fa-user"></i><span></span></a><br />';
-	  echo '<a class="header__appbar--right_entry header__appbar--right_btn" href="' . wp_logout_url( home_url() ) . '">Exit</a>';
-	} else {
-	  echo '<a href="#" class="header__appbar--right_entry header__appbar--right_btn rcl-login" >Entry</a><br />';
-	  echo '<a href="#" class="header__appbar--right_create header__appbar--right_btn rcl-login" >Create</a>';
-	}
-?>
-                            <!-- <a href="#" class="header__appbar--right_create header__appbar--right_btn">Create</a>
-                            <a href="#" class="header__appbar--right_entry header__appbar--right_btn">Entry</a> -->
-                            <a href="#" class="rcl-login login-mob"><i class="material-icons"></i></a>
+                                if ( is_user_logged_in() ) {
+                                global $rcl_user_URL;
+                                echo '<a class="header__appbar--right_entry personal header__appbar--right_btn" href="'. $rcl_user_URL . '"><i class="fa fa-user"></i><span></span></a>';
+                                echo '<a class="header__appbar--right_entry header-logout header__appbar--right_btn" href="' . wp_logout_url( home_url() ) . '">Exit</a>';
+                                echo '<a class="header-logout-mob header__appbar--right_btn" href="' . wp_logout_url( home_url() ) . '">Exit</a>';
+                                } else {
+                                echo '<a href="#" class="header__appbar--right_entry header__appbar--right_btn rcl-login login-desc" >Log in</a><br />';
+                                echo '<a href="#" class="header__appbar--right_create header__appbar--right_btn rcl-login login-desc" >Create</a>';
+                                echo '<a href="#" class="rcl-login login-mob"><i class="material-icons"></i></a>';
+                                }
+                            ?>
+                           
                         </div>
                     </div>
                 </div>

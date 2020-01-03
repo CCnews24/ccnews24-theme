@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="https://schema.org/Blog">
-	<header class="entry-header">
+	<header class="entry-header g">
 		<?php
 		
 		if( is_archive() ){

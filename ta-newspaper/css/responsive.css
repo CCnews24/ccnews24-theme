@@ -24,6 +24,14 @@
 	    top: 100%;
 	    z-index: 999;
 	}
+	#back-top {
+        margin-left: 0;
+        left: 72%;
+    }
+    .single .one-post .author-link {display: none;}
+.single .one-post .entry-meta{
+    display: none;
+}
 	.top-main-navigation ul li a {
 	    padding: 10px 0;
 	    border-top: solid 1px #fff;

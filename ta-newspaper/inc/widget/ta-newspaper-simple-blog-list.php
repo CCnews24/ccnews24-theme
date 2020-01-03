@@ -96,7 +96,7 @@ class TA_Newspaper_Blog_Widget extends WP_Widget {
             <div class="blog-contents">
 
                 <?php if (!empty($tan_title_widget)): ?>
-                    <div class="home-widget-title">
+                    <div class="home-widget-title ico-widget">
                         <?php echo $args['before_title'] . esc_html($tan_title_widget) . $args['after_title']; ?>
                         </div>
                 <?php endif;
@@ -104,7 +104,7 @@ class TA_Newspaper_Blog_Widget extends WP_Widget {
                 if($tan_blog_query->have_posts()):
                     if( $ta_post_slide_layout == 'layout-3' ){ ?>
                         <div class="blog-main-wrap clearfix">
-                            <div class="blog-loop-wrap">
+                            <div class="blog-loop-wrap ">
                                 <?php $tan_count_post = 1;
                                 
                                 while($tan_blog_query->have_posts()){
@@ -157,7 +157,7 @@ class TA_Newspaper_Blog_Widget extends WP_Widget {
                         </div>
                     <?php }elseif( $ta_post_slide_layout == 'layout-2' ){ ?>
                         <div class="blog-main-wrap clearfix">
-                            <div class="blog-loop-wrap">
+                            <div class="blog-loop-wrap link-post">
                                 <?php $tan_count_post = 1;
                                 
                                 while($tan_blog_query->have_posts()){
@@ -210,7 +210,7 @@ class TA_Newspaper_Blog_Widget extends WP_Widget {
                         </div>
                     <?php }else{ ?>
                         <div class="blog-main-wrap-1 clearfix">
-                            <div class="blog-loop-wrap-1">
+                            <a class="blog-loop-wrap-1 link-post" href="<?php the_permalink() ?>">
                                 <?php $tan_count_post = 1;
                                 
                                 while($tan_blog_query->have_posts()){
@@ -261,11 +261,11 @@ class TA_Newspaper_Blog_Widget extends WP_Widget {
                                             </div>
 
                                         <?php $tan_count_post ++; } ?>
-                            </div>
+                            </a>
                         </div>
                     <?php }
                 wp_reset_postdata();endif; ?>
-                
+                <a class="widget-more widget-more_ico" href="/category/ico-passport/">See more<i class="fa fa-angle-right"></i></a>
             </div>
         </div>
 
@@ -324,3 +324,24 @@ class TA_Newspaper_Blog_Widget extends WP_Widget {
     }
 
 }
+
+/*
+<div class="contact-form"><label> Subject
+    [text your-subject] </label>
+<label> Description
+    [textarea your-message] </label>
+<p class="form-span">Please enter the details of your request.</p>
+<label> Tell us your name
+    [text* your-name] </label>
+<p class="form-span">Please enter the details of your request.</p>
+<label> Your email address
+    [email* your-email] </label>
+<label> Let's pick a section?
+[select your-section "General questions" "Public relations" "ICO inquiries" "Advertisement" "Crypto lecture" "Tip for an article" "Review article" "Suspicious article" "Report user" "DMCA complaint" "Report bug" "GDPR"]
+</label>
+<p class="form-span select-span">Please take a moment to carefully select. An accurate selection can speed up your response!</p>
+
+<p style="font-size: 10px;color: gray;">This site is protected by reCAPTCHA and the Google
+<a href="https://policies.google.com/privacy">Privacy Policy</a>and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+[submit "Submit"]
+</div>
